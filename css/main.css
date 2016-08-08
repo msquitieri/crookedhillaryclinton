@@ -1,0 +1,41 @@
+body {
+  background-color: #00a9e0;
+}
+
+img.hillary-portrait, h4.crooked-hillary {
+  -webkit-transition: -webkit-transform 1s ease-out;
+  -moz-transition:    -moz-transform 1s ease-out;
+  -o-transition:      -o-transform 1s ease-out;
+  -ms-transition:     -ms-transform 1s ease-out;
+  transition:         transform 1s ease-out;
+}
+
+h4.crooked-hillary {
+  text-align: center;
+  font-size: 12pt;
+  color: white;
+  opacity: 0;
+}
+
+h4.crooked-hillary.zoomed {
+  opacity: 1;
+  transform: scale(4)
+}
+
+img.hillary-portrait {
+  margin: auto;
+  width: 75%;
+  max-width: 500px;
+  display: block;
+  margin-top: 100px;
+}
+
+img.hillary-portrait.rotated {
+  transform: rotate(15deg);
+}
+
+@media screen and (max-width: 500px) {
+  img.hillary-portrait {
+    margin-top: 25%;
+  }
+}
